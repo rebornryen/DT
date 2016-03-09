@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#username{
+			width: 300px;
+			height: 30px;
+		}
+		#pwd{
+			width: 300px;
+			height: 30px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn11').click(function(event) {
+
+				//访问父窗口的dom
+				//window.parent.document.getElementById('div1').innerHTML = '这是来自于层的内容';				
+				//jquery写法
+				$(window.parent.document).find('#div1').html('这是来自于层的内容....');
+
+				//关闭当前子窗口
+				window.parent.layer.closeAll();
+			});
+		});		
+	</script>
+</head>
+<body>
+	<div>
+		<input type="text" placeholder="用户名/邮箱"  id="username"><br><br>
+		<input type="text" placeholder="密码" id="pwd"><br><br>
+		<input type="button" value="登录" id="btn11">
+	</div>
+	
+</body>
+</html>

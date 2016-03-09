@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+
+		
+
+			$('#btn6').click(function(event) {				
+				//iframe形式加载其他网页内容
+				var index =layer.open({
+					title:"登录",
+				    type: 2,				    
+				    area: ['600px', '400px'], //宽高
+				    content: "login.html"
+				});	
+
+				
+				// window.setTimeout(function(){
+				// 	//关闭指定层
+				// 	// layer.close(index);
+				// 	//关闭所有的层
+				// 	layer.closeAll();
+				// },3000);	
+								
+			});
+
+
+			
+			});
+
+
+	
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+	
+	<input type="button" value="弹出iframe登录页" id="btn6">
+	
+</body>
+</html>

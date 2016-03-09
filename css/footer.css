@@ -1,0 +1,71 @@
+/*页面底部开始*/
+footer {
+	width: 100%;
+	height: 224px;
+    background: none repeat scroll 0% 0% #4E4E4E;
+    position: relative;
+    min-width: 1083px;
+    font-size: 12px;
+   	margin-bottom: -20px;
+}
+footer .ftSearch{
+	height: 38px;
+}
+.footerSearch {
+	line-height: 38px;
+    height: 38px;
+    padding: 8px 0px 0px;
+    background: none repeat scroll 0% 0% #FFBA00;
+    border-bottom: 1px solid #3E3E3E;
+    text-align: center;
+}
+.ftSearch {
+    width: 350px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px auto;
+    text-align: left;
+    background: none repeat scroll 0% 0% #FFF;
+}
+.ftSearch input{
+	width: 350px;
+    height: 38px;
+    border: none;
+}
+.footerFunction{
+	margin: 20px auto;
+	width: 984px;
+	
+	text-align: center;
+}
+.footerFunction ul{
+	float: left;
+	width: 100px;
+	height: 147px;
+	font-size: 12px;
+}
+.footerFunction a{
+	color: #aaa;
+}
+#topcontrol {
+/*	position: absolute;*/
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+}
+#erweima{
+	position: fixed;
+	bottom: 180px;
+	right: -15px;
+	display: none;
+}
+.gyzk{
+	width: 100px;
+	height: 130px;
+	float: right;
+	margin-top: 27px;
+	margin-right: 127px;
+}
+/*页面底部结束*/

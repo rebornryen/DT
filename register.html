@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/Validform_v5.3.2.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+        
+		//一行代码搞定，提交表单的时候会自动触发验证程序
+		$('#form1').Validform({
+			tiptype:3	
+		});
+		
+    });
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="wp">
+			<a class="logo" href=""></a>
+			<div class="divspan">
+				<span>已有账户，</span>
+				<a href="denglu.html">马上登录</a>
+				<span>|</span>
+				<a href="index.html">返回堆糖</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="mainWarper">
+		<div class="formWarper">
+
+			<div class="maintitle">注册</div>
+			<div class="zhuchequ">
+				<form name="form1" id="form1" method="post" action="xxx.jsp">
+					<table width="800" border="0">
+					
+
+						<tr>
+
+							<td>
+								<input type="text" placeholder="用户名/小写字母开头，后面可以是小写字母，数字，下划线，6-12位"name="username" id="username" datatype="/^[a-z][a-z0-9_]{5,11}$/" errormsg="输入格式不正确"></td>
+						</tr>
+						<tr>
+
+							<td>
+								<input type="password" name="userpwd"  datatype="n6-8" errormsg="密码必须是6到8位数字" id="userpwd" placeholder="密码" ></td>
+						</tr>
+						<tr>
+
+							<td>
+								<input type="password" name="userpwd2" id="userpwd2" datatype="*" recheck="userpwd" errormsg="两次密码输入不一致"  placeholder="确认密码"   ></td>
+						</tr>
+					
+
+						<tr>
+
+							<td>
+								<input type="text" placeholder="手机号" name="textfield4" id="textfield4" datatype="/^1[3-8]\d{9}$/i"></td>
+						</tr>
+						<tr>
+							<td >
+								<input class="ingput" type="checkbox">
+								&nbsp;&nbsp;<span style="font-size:12px">我已阅读并接受</span>
+								<a href="" style="font-size:12px">版权声明</a>
+								<span style="font-size:12px">和 隐私保护 条款</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit"  class="btn btn-warning" name="button" id="button" value="马上注册"></td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- 网页底部开始 -->
+	<div class="footer">
+			<!-- 网页底部上半部分开始 -->
+			<div class="footer_main">
+				<div class="footer_span">
+					<div class="div4">
+						<h4>关于我们</h4>
+					</div>
+					<div class="footer_a">
+						<a href="">关于我们</a>
+						<a href="">帮助中心</a>
+						<a href="">加入我们</a>
+						<a href="">堆糖收集工具</a>
+						<a href="">联系我们</a>
+						<a href="">标签集</a>
+						<a href="">商务合作</a>
+						<a href="">免费声明</a>
+					</div>	
+				</div>
+
+
+				<div class="footer_span">
+					<div class="div4">
+						<h4>手机应用</h4>
+					</div>
+					<div class="footer_a">
+						<a href="">堆糖客户端</a>
+						<a href="">爱疯了壁纸</a>
+						<a href="">堆糖良品购</a>
+					</div>
+				</div>
+
+
+				<div class="footer_span">
+					<div class="erweima">
+						
+					</div>
+					<p>扫描二维码</p>
+					<p>下载堆糖手机客户端</p>
+				</div>
+
+
+				<div class="footer_span">
+					<div class="div4">
+						<h4>关注我们</h4>
+					</div>
+					<div class="footer_a">
+						<a href="">新浪微博</a>
+						<a href="">微信</a>
+						<a href="">腾讯微博</a>
+						<a href="">QQ空间</a>
+						<a href="">人人网</a>
+						<a href="">豆瓣网</a>
+					</div>
+				</div>
+
+
+				<div class="footer_span">
+					<div class="div4">
+						<h4>友情链接</h4>
+					</div>
+					<div class="footer_a">
+						<a href="">爱物网</a>
+						<a href="">东方女性网</a>
+						<a href="">肉丁网</a>
+						<a href="">LADYMAX时尚</a>
+						<a href="">美食美酒网</a>
+						<a href="">携程攻略</a>
+						<a href="">体导体招聘</a>
+						<a href="">更多。。</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- 网页底部上半部分结束 -->
+			<div class="footer_bottom">
+				<span>©2015 duitang.com 版权所有。沪ICP备10038086号-1</span>
+				<a href="" class="zhengxinwang"></a>
+				<a href="" class="wangbei">
+					<img src="images/wangbei.png" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- 网页底部结束 -->
+	</div>
+	<!-- 网页底部结束 -->
+
+</body>
+</html>
